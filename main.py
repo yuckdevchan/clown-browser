@@ -1,4 +1,4 @@
-import urllib3.request, time, os
+import urllib3.request, time, os, wget
 
 print("Clown Browser v0.1\n")
 
@@ -21,7 +21,7 @@ def url():
   if url_input.startswith("https://") == True:
     print("\nPassed Check #1: Is a valid URL, of type: " + "HTTPS (Hypertext Transfer Protocol Secure)")
   elif url_input.startswith("http://") == True:
-    print("Passed Check #1: Is a valid URL, of type: " + "HTTP (Hypertext Transfer Protocol (INSECURE))")
+    print("Passed Check #1: Is a valid URL, of type: " + "HTTP (Hypertext Transfer Protocol (INSECURE - Unencrypted Connection.))")
   else:
     print("\nFailed Check #1: Is not a valid URL, of type HTTPS or HTTPS")
     print("\nExiting")
@@ -41,14 +41,16 @@ def url():
   else:
     pass
   
-  print("Downloaded '" + url_input + "' from the internet in " + str(time.process_time() - start) + " seconds.")
+  print("Connected to '" + url_input + "' through the internet in " + str(time.process_time() - start) + " seconds.")
   
   index_input = input("Continue to index.html? (y, n): ")
 
   if index_input == "y":
     print("Downloading index.html...")
     index_load_time = time.process_time()
+    website_index = url_input + "/index.html"
+    index_file = wget.download(website_index, out=path)
     
-    print("Downloaded 'index.html' from the internet in " + str(time.process_time() - start) + " seconds.")
+    print(f"Downloaded 'index.html' from the {url_input} in " + str(time.process_time() - start) + " seconds.")
 
 url()
