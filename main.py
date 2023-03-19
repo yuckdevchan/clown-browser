@@ -1,10 +1,15 @@
 import urllib3.request, time, os, wget
+from comedy import MainWindow, QtWidgets, sys
 
-print("Clown Browser v0.1\n")
+version = "v0.2"
+
+webcache_folder = "webcache"
+
+print(f"Clown Browser {version}\n")
 
 def dir_gen():
   clown_folder = os.path.dirname(os.path.realpath(__file__))
-  path = os.path.join(clown_folder, "webcache")
+  path = os.path.join(clown_folder, webcache_folder)
   if os.path.isdir(path) == False:
     os.mkdir(path)
   else:
@@ -35,7 +40,7 @@ def url():
   r = http.request('GET', url_input)
   print("Website returned code: " + str(r.status))
   
-  path = os.path.join(clown_folder, "webcache", url_input.split("//")[1])
+  path = os.path.join(clown_folder, webcache_folder, url_input.split("//")[1])
   if os.path.isdir(path) == False:
     os.mkdir(path)
   else:
@@ -54,3 +59,13 @@ def url():
     print(f"Downloaded 'index.html' from the {url_input} in " + str(time.process_time() - start) + " seconds.")
 
 url()
+
+
+if __name__ == "__main__":
+    app = QtWidgets.QApplication([])
+
+    widget = MainWindow()
+    widget.resize(480, 270)
+    widget.show()
+
+    sys.exit(app.exec())
