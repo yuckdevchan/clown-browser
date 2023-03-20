@@ -1,6 +1,4 @@
 colorama
-shutil
 wget
-random
 urllib3
 pyside6
