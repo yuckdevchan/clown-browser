@@ -1,6 +1,6 @@
-# clown browser
+# Clown Browser
 ## Intro
-A web browser for clowns. A passion project of mine, may be useful for something. Uses the URLLib3 and WGET python libraries.
+A web browser for clowns. A passion project of mine, most likely will not be useful for anything. Uses the URLLib3 and WGET python libraries.
 ## Components
 ### The Circus Web Engine
 Clown Browser makes use of the Circus Web Engine, which is the component that renders the HTML on your computer.
@@ -13,3 +13,5 @@ Clown Browser makes use of Comedious as its QT fronted. It's written using the `
 - `cd clown-browser` (Do this in the directory you downloaded the code in)
 - To run GUI version: `python comedy.py` (You may need to use the `python3` binary.)
 - To run CMD version: `python cmd.py` (You may need to use the `python3` binary.)
+### Credits
+- All code: some ramdom people i pirated code from 
