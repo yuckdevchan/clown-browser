@@ -1,5 +1,4 @@
 import urllib3.request, time, os, wget
-from comedy import MainWindow, QtWidgets, sys
 
 version = "v0.2"
 
@@ -59,13 +58,3 @@ def url():
     print(f"Downloaded 'index.html' from the {url_input} in " + str(time.process_time() - start) + " seconds.")
 
 url()
-
-
-if __name__ == "__main__":
-    app = QtWidgets.QApplication([])
-
-    widget = MainWindow()
-    widget.resize(480, 270)
-    widget.show()
-
-    sys.exit(app.exec())
