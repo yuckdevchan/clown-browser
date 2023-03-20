@@ -13,3 +13,6 @@ Clown Browser makes use of Comedious as its QT fronted. It's written using the `
 - `cd clown-browser` (Do this in the directory you downloaded the code in)
 - To run GUI version: `python comedy.py` (You may need to use the `python3` binary.)
 - To run CMD version: `python cmd.py` (You may need to use the `python3` binary.)
+## Authors
+- [The Real Circus](https://github.com/circus-real)
+- [yuckdevchan](https://github.com/yuckdevchan)
