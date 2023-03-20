@@ -3,7 +3,7 @@
 [![Linux](https://svgshare.com/i/Zhy.svg)](https://svgshare.com/i/Zhy.svg)
 [![Windows](https://badgen.net/badge/icon/windows?icon=windows&label)](https://microsoft.com/windows/)
 [![GitHub](https://badgen.net/badge/icon/github?icon=github&label)](https://github.com)
-[![Open Source Love svg3](https://badges.frapsoft.com/os/v3/open-source.svg?v=103)](https://github.com/ellerbrock/open-source-badges/)\
+[![Open Source Love svg3](https://badges.frapsoft.com/os/v3/open-source.svg?v=103)](https://github.com/ellerbrock/open-source-badges/)
 # clown browser
 ## Intro
 A web browser for clowns. A passion project of mine, may be useful for something. Uses the URLLib3 and WGET python libraries.
