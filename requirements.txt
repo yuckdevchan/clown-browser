@@ -1,10 +1,6 @@
 colorama
-os
 shutil
-time
-os
 wget
-sys
 random
 urllib3
 pyside6
