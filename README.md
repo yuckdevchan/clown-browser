@@ -14,7 +14,7 @@ Clown Browser makes use of the Circus Web Engine, which is the component that re
 Clown Browser makes use of Comedious as its QT fronted. It's written using the `pyside6` library
 ## Install / Run
 ### Linux / Windows / Mac
-- `pip -r requirements.txt` (You may need to run as administrator / root or use the `pip3` binary instead.
+- `pip install -r requirements.txt` (You may need to run as administrator / root or use the `pip3` binary instead.
 - `git clone https://github.com/clown-browser` (If you don't have `git` installed, you can just download it from [here](https://github.com/yuckdevchan/clown-browser/archive/refs/heads/main.zip) and then unzip it.)
 - `cd clown-browser` (Do this in the directory you downloaded the code in)
 - To run GUI version: `python comedy.py` (You may need to use the `python3` binary.)
