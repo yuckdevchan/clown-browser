@@ -1,1 +1,0 @@
-# Circus Web Engine (ɔ) 2023
