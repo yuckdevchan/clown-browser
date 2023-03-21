@@ -20,5 +20,5 @@ Clown Browser makes use of Comedious as its Qt front-end. It's written using the
 - To run GUI version: `python main.py` (You may need to use the `python3` binary.)
 - To run CMD version: `python cmd.py` (You may need to use the `python3` binary.)
 ## Authors
-- [The Real Circus](https://github.com/circus-real)
+- [circus-real](https://github.com/circus-real)
 - [yuckdevchan](https://github.com/yuckdevchan)
