@@ -3,7 +3,7 @@ import subprocess
 def install(pip_binary):
   pip_install_command = pip_binary + " install -r requirements.txt"
   subprocess.run(pip_install_command)
-  print("Installed dependencies using {pip_binary}\nRun Clown Browser CLI using the command: python cmd.py\nRun Clown Browser GUI using the command: python main.py")
+  print("Installed dependencies using {pip_binary}\n\nRun Clown Browser CLI using the command: python cmd.py\nRun Clown Browser GUI using the command: python main.py")
 
 # Ask user if they want to use a custom pip binary, and if so, which one
 pip_binary = input("What pip binary would you like to use? e.g pip3. (Leave blank for default: pip) ")
