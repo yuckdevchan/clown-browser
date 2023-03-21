@@ -8,12 +8,9 @@ from PySide6.QtGui import *
 from colorama import Fore
 # Import tragic stuff
 from comedious.tragedy import download_html_index, quit_app, user_search, set_app_icon
+from comedious.funny import app_version
 
-app_version = "v0.3"
-
-webcache_folder = "webcache"
-
-print(Fore.MAGENTA + f"Clown Browser {app_version}\n" + Fore.WHITE)
+print(Fore.BLUE + "Launching Comedy..." + Fore.WHITE)
 
 class MainWindow(QtWidgets.QWidget):
     def __init__(self):
