@@ -9,7 +9,7 @@ from colorama import Fore
 from PySide6 import QtWidgets
 from PySide6.QtWidgets import QApplication
 
-cli_args()
+cli_args(program_name=f"Clown Browser {app_version}", program_desc="A Web Browser for Clowns")
 
 print(Fore.MAGENTA + f"Clown Browser {app_version}\n" + Fore.WHITE)
 

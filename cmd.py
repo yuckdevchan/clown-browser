@@ -1,9 +1,7 @@
 import urllib3.request, time, os, wget
-from comedious.funny import webcache_folder
+from comedious.funny import webcache_folder, app_version
 
-version = "v0.2"
-
-print(f"Clown Browser {version}\n")
+print(f"Clown Browser {app_version}\n")
 
 def dir_gen():
   clown_folder = os.path.dirname(os.path.realpath(__file__))

@@ -23,7 +23,7 @@ def create_website_path(url_input):
     
 def download_stylesheets():
     soup = BeautifulSoup(response.content, 'html.parser')
-    stylesheet_links = soup.head.find_all('link', rel='stylesheet')`
+    stylesheet_links = soup.head.find_all('link', rel='stylesheet')
 
 def download_html_index(main_window, url_input):
     print("Downloading index.html...")
