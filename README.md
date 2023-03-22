@@ -11,11 +11,11 @@ A web browser for clowns. A passion project of mine, may be useful for something
 Clown Browser makes use of the Circus Web Engine, which is the component that renders the HTML on your computer.
 ### The Comedious Frontend
 Clown Browser makes use of Comedious as its Qt front-end. It's written using the `pyside6` library
-## Install / Run
-### Linux / Windows / Mac
-- `git clone https://github.com/clown-browser` (If you don't have `git` installed, you can just download it from [here](https://github.com/yuckdevchan/clown-browser/archive/refs/heads/main.zip) and then unzip it.)
-- `cd clown-browser` (Do this in the directory you downloaded the code in)
-- `pip install -r requirements.txt` (You may need to run as administrator / root or use the `pip3` binary instead.
+## Install
+1. `git clone https://github.com/clown-browser` (If you don't have `git` installed, you can just download it from [here](https://github.com/yuckdevchan/clown-browser/archive/refs/heads/main.zip) and then unzip it.)
+2. `cd clown-browser` (Do this in the directory you downloaded the code in)
+3. `pip install -r requirements.txt` (You may need to run as administrator / root or use the `pip3` binary instead.
+## Run
 - To run GUI version: `python main.py` (You may need to use the `python3` binary.)
 - To run CMD version: `python cmd.py` (You may need to use the `python3` binary.)
 ## Authors
