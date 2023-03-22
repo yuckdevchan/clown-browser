@@ -4,7 +4,7 @@
 [![Windows](https://badgen.net/badge/icon/windows?icon=windows&label)](https://microsoft.com/windows/)
 # `clown-browser`
 ## Intro
-A web browser for clowns. A passion project of mine, may be useful for something. Uses the URLLib3 and WGET python libraries.
+A web browser for clowns. A passion project of mine, may be useful for something. Uses the `URLLib3` and `WGET` python libraries.
 ## Components
 ### The `circus` web engine
 Clown Browser makes use of the `circus` web engine, which is the component that renders the HTML on your computer.
