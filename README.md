@@ -2,7 +2,6 @@
 [![made-with-python](https://img.shields.io/badge/Made%20with-Python-1f425f.svg)](https://www.python.org/)
 [![Linux](https://svgshare.com/i/Zhy.svg)](https://svgshare.com/i/Zhy.svg)
 [![Windows](https://badgen.net/badge/icon/windows?icon=windows&label)](https://microsoft.com/windows/)
-(https://github.com/ellerbrock/open-source-badges/)
 # Clown Browser
 ## Intro
 A web browser for clowns. A passion project of mine, may be useful for something. Uses the URLLib3 and WGET python libraries.
