@@ -19,7 +19,6 @@ parser = argparse.ArgumentParser(
     description="Web Browser for Clowns.")
 arg_group = parser.add_mutually_exclusive_group()
 arg_group.add_argument('-r', '--reset', action="store_true", help="Reset Clown Browser")
-print(parser.parse_args())
 args = parser.parse_args()
 
 if args.reset:
