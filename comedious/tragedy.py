@@ -10,7 +10,6 @@ from bs4 import BeautifulSoup
 # Import stuff from other files
 from comedious.funny import clown_folder, webcache_folder, quit_app
 from circus.jester import render_html
-from puppets.marionette import args_quiet, args_verbose
 
 def create_website_path(url_input):
     path = os.path.join(clown_folder, webcache_folder, url_input.split("//")[1])

@@ -1,6 +1,14 @@
 # Ringmaster - file that interprets command line arguments
 import argparse
+from dataclasses import dataclass
 from puppets.reset import reset_app
+
+
+@dataclass
+class AppSettings:
+  quiet: bool
+  verbose: bool
+
 
 def cli_args(program_name, program_desc):
   parser = argparse.ArgumentParser(
@@ -19,8 +27,5 @@ def cli_args(program_name, program_desc):
   
   if args.reset:
     reset_app()
-  else:
-    pass
 
-  args_quiet = args.quiet
-  args_verbose = args.verbose
+  return AppSettings(quiet=args.quiet, verbose=args.verbose)
