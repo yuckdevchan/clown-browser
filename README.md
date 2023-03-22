@@ -19,4 +19,4 @@ Clown Browser makes use of `comedious` as its Qt frontend. It's written using th
 - To run CMD version: `python cmd.py` (You may need to use the `python3` binary.)
 ## Authors
 - [circus-real](https://github.com/circus-real)
-- [yuckdevchan](https://github.com/yuckdevchan)
+- [yuckdevchan](https://github.com/yuckdevchan) (owner)
