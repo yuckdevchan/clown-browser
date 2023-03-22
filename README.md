@@ -13,7 +13,7 @@ Clown Browser makes use of `comedious` as its Qt frontend. It's written using th
 ## Install
 1. `git clone https://github.com/clown-browser` (If you don't have `git` installed, you can just download it from [here](https://github.com/yuckdevchan/clown-browser/archive/refs/heads/main.zip) and then unzip it.)
 2. `cd clown-browser` (Do this in the directory you downloaded the code in)
-3. `python install.py` (You may need to run as administrator / root using `sudo`at the start of the command, or use the `pip3` binary.
+3. `python install.py` (You may need to run as administrator / root using `sudo` at the start of the command, or use the `pip3` binary.
 ## Run
 - To run GUI version: `python main.py` (You may need to use the `python3` binary.)
 - To run CMD version: `python cmd.py` (You may need to use the `python3` binary.)
