@@ -1,0 +1,1 @@
+add beautiful soup module to requirements.txt
