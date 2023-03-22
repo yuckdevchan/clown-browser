@@ -1,8 +1,7 @@
 import urllib3.request, time, os, wget
+from comedious.funny import webcache_folder
 
 version = "v0.2"
-
-webcache_folder = "webcache"
 
 print(f"Clown Browser {version}\n")
 
