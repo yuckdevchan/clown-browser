@@ -14,6 +14,7 @@ def cli_args(program_name, program_desc):
   arg_group.add_argument('-r', '--reset', action="store_true", help="Reset Clown Browser")
   arg_group.add_argument('-q', '--quiet', action="store_true", help="Make output less verbose")
   arg_group.add_argument('-v', '--verbose', action="store_true", help="Make output more verbose")
+  arg_group.add_argument('-r', '--reset', action="store_true", help="Reset Clown Browser")
   
   args = parser.parse_args()
   
