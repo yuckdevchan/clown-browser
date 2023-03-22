@@ -1,5 +1,5 @@
-# Circus
-## Circus Components
+# `circus`
+## Components
 ### `comedy`
 `comedy` is the GUI code file. It contains all the buttons and gizmos in the Qt Front-end for `clown-browser`.
 ### `tragedy`
