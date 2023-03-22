@@ -6,6 +6,7 @@ from PySide6.QtWidgets import *
 from PySide6.QtCore import *
 from PySide6.QtGui import *
 from colorama import Fore
+from bs4 import BeautifulSoup
 # Import stuff from other files
 from comedious.funny import clown_folder, webcache_folder
 
@@ -19,6 +20,10 @@ def create_website_path(url_input):
         os.makedirs(path)
     else:
         pass
+    
+def download_stylesheets():
+    soup = BeautifulSoup(response.content, 'html.parser')
+    stylesheet_links = soup.head.find_all('link', rel='stylesheet')`
 
 def download_html_index(main_window, url_input):
     print("Downloading index.html...")
