@@ -7,8 +7,8 @@ from PySide6.QtCore import *
 from PySide6.QtGui import *
 from colorama import Fore
 # Import tragic stuff
-from comedious.tragedy import download_html_index, quit_app, user_search, set_app_icon
-from comedious.funny import app_version
+from comedious.tragedy import download_html_index, user_search, set_app_icon
+from comedious.funny import app_version, quit_app
 
 print(Fore.BLUE + "Launching Comedy..." + Fore.WHITE)
 

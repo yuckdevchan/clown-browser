@@ -21,4 +21,6 @@ def cli_args(program_name, program_desc):
     reset_app()
   else:
     pass
-  
+
+  args_quiet = args.quiet
+  args_verbose = args.verbose

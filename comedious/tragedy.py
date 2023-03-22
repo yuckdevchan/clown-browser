@@ -8,10 +8,9 @@ from PySide6.QtGui import *
 from colorama import Fore
 from bs4 import BeautifulSoup
 # Import stuff from other files
-from comedious.funny import clown_folder, webcache_folder
-
-def quit_app(self):
-    pass
+from comedious.funny import clown_folder, webcache_folder, quit_app
+from circus.jester import render_html
+from puppets.marionette import args_quiet, args_verbose
 
 def create_website_path(url_input):
     path = os.path.join(clown_folder, webcache_folder, url_input.split("//")[1])
@@ -26,7 +25,7 @@ def download_stylesheets():
     stylesheet_links = soup.head.find_all('link', rel='stylesheet')
 
 def download_html_index(main_window, url_input):
-    print("Downloading index.html...")
+    print("Comedious[Tragedy]: Downloading index.html...")
     main_window.status_text.setText("Downloading index.html...")
     index_load_time = time.process_time()
     website_index = url_input + "/index.html"
@@ -37,10 +36,14 @@ def download_html_index(main_window, url_input):
     start = time.process_time()
     index_file = wget.download(website_index, out=path)
     # Website download is a success (probably)
-    website_download_success_text = Fore.GREEN + f"\nDownloaded 'index.html' from {url_input} in {str(time.process_time() - start)} seconds." + Fore.WHITE
+    website_download_success_text = Fore.GREEN + f"\nComedious[Tragedy]: Downloaded 'index.html' from {url_input} in {str(time.process_time() - start)} seconds." + Fore.WHITE
     website_download_success_text_gui = f"\nDownloaded 'index.html' from {url_input} in {str(time.process_time() - start)} seconds."
     print(website_download_success_text)
     main_window.status_text.setText(website_download_success_text_gui)
+    # Call render html function
+    index_html_file_path = os.path.join(path, "index.html")
+    print("Comedious[Tragedy]: Sending HTML file to Joker...")
+    render_html(html_file="index_html_file_path")
     
 def user_search(main_window):
     url_input = main_window.url_input_box.text()
@@ -48,18 +51,18 @@ def user_search(main_window):
     # Check what kind of connection it is (http or https)
     if url_input.startswith("https://") == True:
         url_input_valid = True
-        print(Fore.GREEN + "\nPassed Check #1: Is a valid URL, of type: " + Fore.BLUE + "HTTPS (Hypertext Transfer Protocol Secure)" + Fore.WHITE)
+        print(Fore.GREEN + "\nComedious[Tragedy]: Passed Check #1: Is a valid URL, of type: " + Fore.BLUE + "HTTPS (Hypertext Transfer Protocol Secure)" + Fore.WHITE)
     elif url_input.startswith("http://") == True:
         url_input_valid = True
-        print(Fore.GREEN + "Passed Check #1: Is a valid URL, of type: " + Fore.RED + "HTTP (Hypertext Transfer Protocol (INSECURE - Unencrypted Connection.))" + Fore.WHITE)
+        print(Fore.GREEN + "Comedious[Tragedy]: Passed Check #1: Is a valid URL, of type: " + Fore.RED + "HTTP (Hypertext Transfer Protocol (INSECURE - Unencrypted Connection.))" + Fore.WHITE)
     else:
         url_input_valid = False
-        print("\nFailed Check #1: Is not a valid URL, of type HTTPS or HTTPS")
-        print("\nExiting")
+        print("\nComedious[Tragedy]: Failed Check #1: Is not a valid URL, of type HTTPS or HTTPS")
+        print("\nComedious[Tragedy]: Exiting")
         for i in range(3, 0, -1):
             time.sleep(1)
             print(i)
-            exit()
+            quit_app()
     if url_input_valid:
         main_window.status_text.setText("URL is Valid, Connecting to Website")
         start = time.process_time()
