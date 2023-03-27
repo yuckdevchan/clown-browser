@@ -51,8 +51,6 @@ class MainWindow(QtWidgets.QWidget):
 
     def user_search(self):
         user_search(self)
-    def download_html_index(self):
-        download_html_index(self)
 
     @QtCore.Slot()
     # Action Functions
