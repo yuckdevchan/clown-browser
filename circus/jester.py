@@ -17,3 +17,4 @@ def render_html(html_file):
     soup_url = BeautifulSoup(file_contents, "html.parser")
     website_element_title = soup_url.find("title").get_text()
     print(f"Circus[Jester]: " + Fore.BLUE + "HTML title: " + Fore.MAGENTA + website_element_title + Fore.WHITE)
+    
