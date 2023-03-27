@@ -8,7 +8,7 @@ from PySide6.QtGui import *
 from colorama import Fore
 from bs4 import BeautifulSoup
 # Import stuff from other files
-from comedious.funny import clown_folder, webcache_folder, quit_app
+from comedious.funny import clown_folder, webcache_folder, quit_app, app_version
 from circus.jester import render_html
 
 def create_website_path(url_input):
@@ -42,7 +42,8 @@ def download_html_index(main_window, url_input):
     # Call render html function
     index_html_file_path = os.path.join(path, "index.html")
     print("Comedious[Tragedy]: " + Fore.BLUE + "Sending HTML file to Joker..." + Fore.WHITE)
-    render_html(html_file=index_html_file_path)
+    website_element_html_title = render_html(html_file=index_html_file_path)
+    main_window.setWindowTitle(f"Clown Browser {app_version} - {website_element_html_title}")
     
 def user_search(main_window):
     url_input = main_window.url_input_box.text()
