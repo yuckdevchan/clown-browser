@@ -42,22 +42,22 @@ def download_html_index(main_window, url_input):
     # Call render html function
     index_html_file_path = os.path.join(path, "index.html")
     print("Comedious[Tragedy]: Sending HTML file to Joker...")
-    render_html(html_file="index_html_file_path")
+    render_html(html_file=index_html_file_path)
     
 def user_search(main_window):
     url_input = main_window.url_input_box.text()
-    print("URL Entered:", url_input)
+    print("Comedious[Tragedy]:" + Fore.BLUE + "URL Entered: " + Fore.MAGENTA + url_input + Fore.WHITE)
     # Check what kind of connection it is (http or https)
     if url_input.startswith("https://") == True:
         url_input_valid = True
-        print(Fore.GREEN + "\nComedious[Tragedy]: Passed Check #1: Is a valid URL, of type: " + Fore.BLUE + "HTTPS (Hypertext Transfer Protocol Secure)" + Fore.WHITE)
+        print("\nComedious[Tragedy]: " + Fore.GREEN + "Passed Check #1: Is a valid URL, of type: " + Fore.BLUE + "HTTPS (Hypertext Transfer Protocol Secure)" + Fore.WHITE)
     elif url_input.startswith("http://") == True:
         url_input_valid = True
-        print(Fore.GREEN + "Comedious[Tragedy]: Passed Check #1: Is a valid URL, of type: " + Fore.RED + "HTTP (Hypertext Transfer Protocol (INSECURE - Unencrypted Connection.))" + Fore.WHITE)
+        print("Comedious[Tragedy]: Passed Check #1: Is a valid URL, of type: " + Fore.RED + "HTTP (Hypertext Transfer Protocol (INSECURE - Unencrypted Connection.))" + Fore.WHITE)
     else:
         url_input_valid = False
-        print("\nComedious[Tragedy]: Failed Check #1: Is not a valid URL, of type HTTPS or HTTPS")
-        print("\nComedious[Tragedy]: Exiting")
+        print("\nComedious[Tragedy]: " + Fore.RED + "Failed Check #1: Is not a valid URL, of type HTTPS or HTTPS" + Fore.WHITE)
+        print("\nComedious[Tragedy]: " + Fore.BLUE + "Exiting" + Fore.WHITE)
         for i in range(3, 0, -1):
             time.sleep(1)
             print(i)
@@ -69,7 +69,7 @@ def user_search(main_window):
         http_code = http.request('GET', url_input)
         if str(http_code.status) == "200":
             print(Fore.GREEN + "Website returned code: " + str(http_code.status) + Fore.WHITE)
-            print(f"Succesfully conected to: {url_input}.")
+            print(f"Comedious[Tragedy]: " + Fore.GREEN + "Succesfully conected to: {url_input}." + Fore.WHITE)
             main_window.status_text.setText(Fore.GREEN + f"Successful connected to: {url_input}." + Fore.WHITE)
             # Call download index.html
             download_html_index(main_window, url_input)
