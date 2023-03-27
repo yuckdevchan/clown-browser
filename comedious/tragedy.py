@@ -24,7 +24,7 @@ def download_stylesheets():
     stylesheet_links = soup.head.find_all('link', rel='stylesheet')
 
 def download_html_index(main_window, url_input):
-    print("Comedious[Tragedy]: Downloading index.html...")
+    print("Comedious[Tragedy]: " + Fore.BLUE + "Downloading index.html..." + Fore.WHITE)
     main_window.status_text.setText("Downloading index.html...")
     index_load_time = time.process_time()
     website_index = url_input + "/index.html"
@@ -41,7 +41,7 @@ def download_html_index(main_window, url_input):
     main_window.status_text.setText(website_download_success_text_gui)
     # Call render html function
     index_html_file_path = os.path.join(path, "index.html")
-    print("Comedious[Tragedy]: Sending HTML file to Joker...")
+    print("Comedious[Tragedy]: " + Fore.BLUE + "Sending HTML file to Joker..." + Fore.WHITE)
     render_html(html_file=index_html_file_path)
     
 def user_search(main_window):
