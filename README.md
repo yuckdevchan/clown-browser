@@ -10,7 +10,13 @@ A web browser for clowns. A passion project of mine, may be useful for something
 Clown Browser makes use of the `circus` web engine, which is the component that renders the HTML on your computer.
 ### The `comedious` Frontend
 Clown Browser makes use of `comedious` as its Qt frontend. It's written using the `pyside6` library
-## Install
+## Installation
+### Automatic Installation
+#### Linux
+Run the following command in a terminal or TTY:
+`sudo curl -L https://raw.githubusercontent.com/yuckdevchan/clown-browser/main/puppets/penguin.sh | sh`
+### Manual Installation
+#### Windows, Mac or Linux
 1. `git clone https://github.com/clown-browser` (If you don't have `git` installed, you can just download it from [here](https://github.com/yuckdevchan/clown-browser/archive/refs/heads/main.zip) and then unzip it.)
 2. `cd clown-browser` (Do this in the directory you downloaded the code in)
 3. `python install.py` (You may need to run as administrator / root using `sudo` at the start of the command)
