@@ -13,7 +13,7 @@ Clown Browser makes use of `comedious` as its Qt frontend. It's written using th
 ## Installation
 ### Automatic Installation
 #### Linux
-Run the following command in a terminal or TTY:
+Run the following command in a terminal or TTY: \
 `sudo curl -L https://raw.githubusercontent.com/yuckdevchan/clown-browser/main/puppets/penguin.sh | sh`
 ### Manual Installation
 #### Windows, Mac or Linux
