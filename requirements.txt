@@ -4,3 +4,4 @@ urllib3
 pyside6
 bs4
 argparse
+yt-dlp
