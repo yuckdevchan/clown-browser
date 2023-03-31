@@ -12,6 +12,7 @@ Clown Browser makes use of the `circus` web engine, which is the component that 
 Clown Browser makes use of `comedious` as its Qt frontend. It's written using the `pyside6` library
 ## Installation
 ### Automatic Installation
+NOTE: Automatic Installations only support downloading the latest release. Installing an older release must be done manually!
 #### Linux
 Run the following command in a terminal or TTY: \
 `sudo curl -L https://raw.githubusercontent.com/yuckdevchan/clown-browser/main/puppets/penguin.sh | sh`
