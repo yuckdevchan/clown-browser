@@ -1,6 +1,6 @@
 # Tragedy: Functions and bits used by comedy
 # Import QT and other stuff
-import time, os, urllib3, wget
+import time, os, urllib3, wget, subprocess
 from PySide6 import QtCore, QtWidgets, QtGui
 from PySide6.QtWidgets import *
 from PySide6.QtCore import *
@@ -8,7 +8,7 @@ from PySide6.QtGui import *
 from colorama import Fore
 from bs4 import BeautifulSoup
 # Import stuff from other files
-from comedious.funny import clown_folder, webcache_folder, quit_app, app_version
+from comedious.funny import clown_folder, webcache_folder, app_version
 from circus.jester import render_html
 
 def create_website_path(url_input):
@@ -59,10 +59,6 @@ def user_search(main_window):
         url_input_valid = False
         print("\nComedious[Tragedy]: " + Fore.RED + "Failed Check #1: Is not a valid URL, of type HTTPS or HTTPS" + Fore.WHITE)
         print("\nComedious[Tragedy]: " + Fore.BLUE + "Exiting" + Fore.WHITE)
-        for i in range(3, 0, -1):
-            time.sleep(1)
-            print(i)
-            quit_app()
     if url_input_valid:
         main_window.status_text.setText("URL is Valid, Connecting to Website")
         start = time.process_time()
@@ -77,6 +73,15 @@ def user_search(main_window):
         else:
             print("Website returned code: " + str(http_code.status))
             main_window.status_text.setText(Fore.RED + f"Could not connect to: {url_input}." + Fore.WHITE)
+
+def yt_download_video(main_window):
+    print(Fore.BLUE + "Downloading " + Fore.RED + "YouTube" + Fore.BLUE + " Video" + Fore.WHITE)
+    url_input = main_window.url_input_box.text()
+    subprocess.run("yt-dlp " + url_input, shell=True)
+
+def yt_download_audio(main_window):
+    print(Fore.BLUE + "Downloading " + Fore.RED + "YouTube" + Fore.BLUE + " Audio" + Fore.WHITE)
+    url_input = main_window.url_input_box.text()
 
 def set_app_icon(main_window, icon_variable):
     main_window.icon_pixmap = QPixmap(icon_variable)

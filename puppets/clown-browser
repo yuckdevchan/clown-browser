@@ -1,0 +1,4 @@
+#!/bin/bash
+# Linux Exectuable
+
+python3 ~/.local/bin/clown-browser/main.py

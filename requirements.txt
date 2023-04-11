@@ -5,3 +5,4 @@ pyside6
 bs4
 argparse
 yt-dlp
+ffmpeg
