@@ -5,4 +5,6 @@
 ### `reset`
 resets clown browser
 ### `ringmaster`
-Processes all valid command line arguments given to the program.
+Windows powershell install script
+### `penguin`
+Linux install scripts
