@@ -2,7 +2,7 @@
 [![made-with-python](https://img.shields.io/badge/Made%20with-Python-1f425f.svg)](https://www.python.org/)
 # clown browser
 ## Intro
-A web browser for clowns. A passion project of mine, may be useful for something. Uses the `urllib3` and `wget` python libraries.
+A web browser for clowns. May be useful for something. Uses the `urllib3` and `wget` python libraries.
 ## Components
 ### The circus web engine
 Clown Browser makes use of the `circus` web engine, which is the component that renders the HTML on your computer.
