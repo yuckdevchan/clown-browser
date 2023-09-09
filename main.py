@@ -1,4 +1,4 @@
-# Clown Browser
+# Clown Browser 2023
 # Import from other files
 from puppets.reset import reset_app
 from puppets.marionette import cli_args
